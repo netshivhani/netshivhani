@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Data>
+	<Questions>
+		<Question Id="data_numberOfCores" Text="Number of processing cores" InputType="VALUE" DataType="INT" Prefix=""/>
+		<Question Id="data_diskStorage" Text="Disκ Storage in TB" InputType="VALUE" DataType="INT" Prefix="TB"/>
+		<Question Id="data_tapeStorage" Text="Tape Storage in TB" InputType="VALUE" DataType="INT" Prefix="TB"/>
+		<Question Id="data_monthsPerLogicalCPU" Text="Months of logical CPU wall clock time" InputType="VALUE" DataType="INT" Prefix="months">
+			<Tooltip><![CDATA[For more information on Wall clock time please visit <a href="http://en.wikipedia.org/wiki/Wall_clock_time" target="_blank">http://en.wikipedia.org/wiki/Wall_clock_time</a>]]></Tooltip>
+		</Question>
+		<Question Id="data_costPerLogicalCPU" Text="Acquisition cost per logical core in R as average value" InputType="VALUE" DataType="INT" Prefix="R" Average="275" Median="218">
+			<Tooltip><![CDATA[You can answer this question either as an average value or as a range.<br/><br/>Please do not include any hardware support contract costs or software costs in the values. Use approximations on the basis of most recent procurements of budget data]]></Tooltip>
+		</Question>
+		<Question Id="data_costDiskStoragePerTB" Text="Acquisition cost per TB in disk storage in R as average value" InputType="VALUE" DataType="INT" Prefix="R" Average="493" Median="270">
+	</Question>
+		<Question Id="data_costTapeStoragePerTB" Text="Acquisition cost per TB in tape storage in R as average value" InputType="VALUE" DataType="INT" Prefix="R" Average="88" Median="78">
+	</Question>
+		<Question Id="data_usefulLifeOfCPU" Text="Average useful life of CPUs" InputType="VALUE" DataType="INT" Prefix="years" Average="4.9" Median="5"/>
+		<Question Id="data_usefulLifeOfDiskStorage" Text="Average useful life of disk storage" InputType="VALUE" DataType="INT" Prefix="years" Average="5.6" Median="5"/>
+		<Question Id="data_usefulLifeOfTapeStorage" Text="Average useful life of tape storage" InputType="VALUE" DataType="INT" Prefix="years" Average="6.5" Median="5"/>
+		<Question Id="data_costInterconnectEquipment" Text="Interconnect equipment costs as percentage of hardware acquisition costs" InputType="VALUE" DataType="INT" Prefix="%" Average="10" Median="9">
+			<Tooltip><![CDATA[Please present an overall estimation of the related interconnect equipment costs (network devices, cables, racks etc.) as a percentage (or range of percentages) of the hardware acquisition cost.<br/><br/>Use approximations on the basis of most recent procurements of budget data.<br/><br/>In case interconnect equipment costs are not a separate line item and they have already included in the procurement costs please set 0 (zero)]]></Tooltip>
+		</Question>
+		<Question Id="data_costSupportContract" Text="Support contract costs as percentage of hardware acquisition costs" InputType="VALUE" DataType="INT" Prefix="%" Average="6" Median="4">
+			<Tooltip><![CDATA[Please present an overall estimation of the support contract costs (e.g. next-business-day hardware support costs etc.) as a percentage (or range of percentages) of the hardware (computing and storage) acquisition cost.<br/><br/>Use approximations on the basis of most recent procurements of budget data.]]></Tooltip>
+		</Question>
+		<Question Id="data_costAuxiliaryEquipment" Text="Auxiliary equipment cost" InputType="VALUE" DataType="INT" Prefix="R" Average="18" Median="20">
+			<Tooltip><![CDATA[Please indicate what would be the investment cost of all auxiliary equipment cost (i.e. UPS, air-cooling, liquid cooling, power generators, power transformers, fire detection, etc) available at the site as percentage of the cost of computing and storage infrastructure available.]]></Tooltip>
+		</Question>
+		<Question Id="data_costSoftwareAbsolute" Text="Software costs" InputType="VALUE" DataType="INT" Prefix="R"/>
+			<Tooltip><![CDATA[Please make an estimation of the total cost of the related software (e.g. operating system,  fabric layer / file system software (e.g. LSF, GPFS), software support contract costs, applications cost, 3rd party software cost, compilers, etc.) as a percentage of hardware (computing and storage) acquisition cost.]]></Tooltip>
+		<Question Id="data_numberOfFTE" Text="Number or FTEs" InputType="VALUE" DataType="INT" Prefix="FTEs" Average="4.61" Median="2.16">
+			<Tooltip><![CDATA[Please indicate the number of FTEs in the centre “necessary” for running the systems (i.e. Administrators, Operators, Middleware developers, Application developers, Trainers, Dissemination persons, Policy makers, Managers)]]></Tooltip>
+		</Question>
+		<!--
+	<Question Text="What is the percentage of the FTEs of Q15 needed to be retained if the site would use commercial cloud providers for all computing and storage services (ESTIMATE) either as % value or as range" InputType="RANGE" DataType="INT" Prefix="%">
+		<Tooltip>
+			<![CDATA[Even if all computing and storage activities are migrated to the cloud, still some FTEs will be needed in the HPC/HTC sites.<br/><br/>Please provide an estimation of the % of FTEs needed to accommodate the necessary tasks on the basis of the existing FTES indicated on Q15]]>
+		</Tooltip>
+	</Question>		
+	<Question Text="What would be the percentage increase of the FTEs indicated in question Q15 if your site doubled its size measured in number of cores either as % value or as range" InputType="RANGE" DataType="INT" Prefix="%">
+		<Tooltip>
+			<![CDATA[Please make an estimation assuming that the increase in capacity is not accompanied with the development of a new data centre]]>
+		</Tooltip>
+	</Question>		
+	-->
+		<Question Id="data_costAverageSalaryPerFTE" Text="Average salary per FTE in R" InputType="VALUE" DataType="INT" Prefix="R/FTE" Average="54207" Median="48800">
+			<Tooltip><![CDATA[The average salary corresponds to the gross salary plus employee benefits, employer social security contributions and bonuses]]></Tooltip>
+		</Question>
+		<Question Id="data_hostingSpace" Text="Hosting space in m2" InputType="VALUE" DataType="INT" Prefix="m2" Average="64.96" Median="52.41">
+			<Tooltip><![CDATA[Please indicate the space in m2 used by the HPC or HTC center]]></Tooltip>
+		</Question>
+		<Question Id="data_totalYearElectricityConsumption" Text="Total yearly electricity consumption for hosting in Mwh" InputType="VALUE" DataType="INT" Prefix="Mwh" Average="339.15" Median="307.74">
+			<Tooltip><![CDATA[Please indicate the yearly consumption of energy in MWh for hosting. Hosting includes servers, storage, networking, cooling, lighting, UPS systems, etc.]]></Tooltip>
+		</Question>
+		<Question Id="data_totalYearElectricityConsumptionForIT" Text="Total yearly electricity consumption for IT in Mwh" InputType="VALUE" DataType="INT" Prefix="Mwh">
+			<Tooltip><![CDATA[Please indicate the yearly consumption of energy in MWh on for IT. IT includes only servers, storage and networking.<br/><br/>Therefore this amount is part of the energy consumption indicated in Q18]]></Tooltip>
+		</Question>
+		<!--
+		<Question Text="Power Usage Effectiveness in 2011" InputType="VALUE" DataType="INT" Prefix="">
+			<Tooltip><![CDATA[Power Usage Effectiveness: It is the ratio of total amount of power used by the data centre facility to the power delivered to IT equipments.<br/><br/> Actually a ratio of Q18 over Q19. For more information please visit <a target="_blank" href="http://en.wikipedia.org/wiki/Power_usage_effectiveness">http://en.wikipedia.org/wiki/Power_usage_effectiveness</a>]]></Tooltip>
+		</Question>
+		
+	<Question Text="Ratio of computing to cooling in 2011" InputType="VALUE" DataType="INT" Prefix="">
+		<Tooltip>
+			<![CDATA[The computing to cooling ratio is a ratio presenting the relation between the power delivered to IT equipments (servers, storage and networking) compared to the power used for cooling.]]>
+		</Tooltip>	
+	</Question>	
+    -->
+		<Question Id="data_costConnectivity" Text="Connectivity costs in R" InputType="VALUE" DataType="INT" Prefix="R">
+			<Tooltip><![CDATA[If you do not pay for connectivity please put 0 (zero)]]></Tooltip>
+		</Question>
+		<Question Id="data_costOthers" Text="Other costs in R" InputType="VALUE" DataType="INT" Prefix="R">
+			<Tooltip><![CDATA[Please indicate any other costs that are related to the NGI site/ HPC Centre that have not be covered by the previous questions (e.g. Personnel training costs, training certifications, Travelling expenses – Participation to conferences costs, fees paid to the university/institute for hosting the site/centre, Insurance fees, Interest expenses on loans)]]></Tooltip>
+		</Question>
+		<Question Id="data_costPerM2" Text="m2 yearly cost" InputType="VALUE" DataType="INT" Prefix="R/m2   &lt;i&gt;(Indicative value R100/m2)&lt;/i&gt;"/>
+		<Question Id="data_costPerKWH" Text="Cost per kwh (R/kwh)" InputType="VALUE" DataType="INT" Prefix="R/kwh    &lt;i&gt;(Indicative value R0.10/kwh)&lt;/i&gt;"/>
+	</Questions>
+</Data>
